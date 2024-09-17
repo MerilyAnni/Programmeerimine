@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\bin\Debug\net8.0\Week1firstApp.exe
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\bin\Debug\net8.0\Week1firstApp.deps.json
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\bin\Debug\net8.0\Week1firstApp.runtimeconfig.json
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\bin\Debug\net8.0\Week1firstApp.dll
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\bin\Debug\net8.0\Week1firstApp.pdb
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\Week1firstApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\Week1firstApp.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\Week1firstApp.AssemblyInfo.cs
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\Week1firstApp.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\Week1firstApp.dll
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\refint\Week1firstApp.dll
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\Week1firstApp.pdb
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\Week1firstApp.genruntimeconfig.cache
+C:\Users\raigo\source\repos\MerilyPr\Week1firstApp\Week1firstApp\obj\Debug\net8.0\ref\Week1firstApp.dll
