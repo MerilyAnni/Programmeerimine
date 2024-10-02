@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\bin\Debug\net8.0\AndOperatorwithRanges.exe
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\bin\Debug\net8.0\AndOperatorwithRanges.deps.json
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\bin\Debug\net8.0\AndOperatorwithRanges.runtimeconfig.json
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\bin\Debug\net8.0\AndOperatorwithRanges.dll
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\bin\Debug\net8.0\AndOperatorwithRanges.pdb
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\AndOperatorwithRanges.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\AndOperatorwithRanges.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\AndOperatorwithRanges.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\AndOperatorwithRanges.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\AndOperatorwithRanges.dll
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\refint\AndOperatorwithRanges.dll
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\AndOperatorwithRanges.pdb
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\AndOperatorwithRanges.genruntimeconfig.cache
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\AndOperatorwithRanges\obj\Debug\net8.0\ref\AndOperatorwithRanges.dll

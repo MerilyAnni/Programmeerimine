@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\bin\Debug\net8.0\Week5AndorLogicalOperators.exe
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\bin\Debug\net8.0\Week5AndorLogicalOperators.deps.json
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\bin\Debug\net8.0\Week5AndorLogicalOperators.runtimeconfig.json
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\bin\Debug\net8.0\Week5AndorLogicalOperators.dll
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\bin\Debug\net8.0\Week5AndorLogicalOperators.pdb
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\Week5AndorLogicalOperators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\Week5AndorLogicalOperators.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\Week5AndorLogicalOperators.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\Week5AndorLogicalOperators.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\Week5AndorLogicalOperators.dll
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\refint\Week5AndorLogicalOperators.dll
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\Week5AndorLogicalOperators.pdb
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\Week5AndorLogicalOperators.genruntimeconfig.cache
+C:\Users\raigo\source\repos\Week5AndorLogicalOperators\Week5AndorLogicalOperators\obj\Debug\net8.0\ref\Week5AndorLogicalOperators.dll

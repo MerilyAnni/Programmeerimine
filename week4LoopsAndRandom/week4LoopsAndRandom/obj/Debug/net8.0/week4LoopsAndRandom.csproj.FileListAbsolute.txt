@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\bin\Debug\net8.0\week4LoopsAndRandom.exe
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\bin\Debug\net8.0\week4LoopsAndRandom.deps.json
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\bin\Debug\net8.0\week4LoopsAndRandom.runtimeconfig.json
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\bin\Debug\net8.0\week4LoopsAndRandom.dll
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\bin\Debug\net8.0\week4LoopsAndRandom.pdb
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\week4LoopsAndRandom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\week4LoopsAndRandom.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\week4LoopsAndRandom.AssemblyInfo.cs
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\week4LoopsAndRandom.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\week4LoopsAndRandom.dll
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\refint\week4LoopsAndRandom.dll
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\week4LoopsAndRandom.pdb
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\week4LoopsAndRandom.genruntimeconfig.cache
+C:\Users\raigo\source\repos\week4LoopsAndRandom\week4LoopsAndRandom\obj\Debug\net8.0\ref\week4LoopsAndRandom.dll
