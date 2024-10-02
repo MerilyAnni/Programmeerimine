@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\Week14OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\Week14OOP.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\Week14OOP.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\Week14OOP.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\bin\Debug\net8.0\Week14OOP.exe
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\bin\Debug\net8.0\Week14OOP.deps.json
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\bin\Debug\net8.0\Week14OOP.runtimeconfig.json
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\bin\Debug\net8.0\Week14OOP.dll
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\bin\Debug\net8.0\Week14OOP.pdb
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\Week14OOP.dll
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\refint\Week14OOP.dll
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\Week14OOP.pdb
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\Week14OOP.genruntimeconfig.cache
+C:\Users\raigo\source\repos\Week14OOP\Week14OOP\obj\Debug\net8.0\ref\Week14OOP.dll

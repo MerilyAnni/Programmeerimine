@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\Week13ReadingFromDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\Week13ReadingFromDB.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\Week13ReadingFromDB.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\Week13ReadingFromDB.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\bin\Debug\net8.0\Week13ReadingFromDB.exe
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\bin\Debug\net8.0\Week13ReadingFromDB.deps.json
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\bin\Debug\net8.0\Week13ReadingFromDB.runtimeconfig.json
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\bin\Debug\net8.0\Week13ReadingFromDB.dll
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\bin\Debug\net8.0\Week13ReadingFromDB.pdb
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\Week13ReadingFromDB.dll
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\refint\Week13ReadingFromDB.dll
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\Week13ReadingFromDB.pdb
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\Week13ReadingFromDB.genruntimeconfig.cache
+C:\Users\raigo\source\repos\Week13ReadingFromDB\Week13ReadingFromDB\obj\Debug\net8.0\ref\Week13ReadingFromDB.dll
