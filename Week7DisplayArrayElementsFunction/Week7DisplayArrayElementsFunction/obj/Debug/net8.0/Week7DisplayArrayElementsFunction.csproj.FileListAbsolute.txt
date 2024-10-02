@@ -1,0 +1,4 @@
+C:\Users\raigo\source\repos\Week7DisplayArrayElementsFunction\Week7DisplayArrayElementsFunction\obj\Debug\net8.0\Week7DisplayArrayElementsFunction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week7DisplayArrayElementsFunction\Week7DisplayArrayElementsFunction\obj\Debug\net8.0\Week7DisplayArrayElementsFunction.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week7DisplayArrayElementsFunction\Week7DisplayArrayElementsFunction\obj\Debug\net8.0\Week7DisplayArrayElementsFunction.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week7DisplayArrayElementsFunction\Week7DisplayArrayElementsFunction\obj\Debug\net8.0\Week7DisplayArrayElementsFunction.csproj.CoreCompileInputs.cache

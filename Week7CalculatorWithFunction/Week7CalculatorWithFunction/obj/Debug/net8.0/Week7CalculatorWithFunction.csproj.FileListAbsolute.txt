@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\Week7CalculatorWithFunction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\Week7CalculatorWithFunction.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\Week7CalculatorWithFunction.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\Week7CalculatorWithFunction.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\bin\Debug\net8.0\Week7CalculatorWithFunction.exe
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\bin\Debug\net8.0\Week7CalculatorWithFunction.deps.json
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\bin\Debug\net8.0\Week7CalculatorWithFunction.runtimeconfig.json
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\bin\Debug\net8.0\Week7CalculatorWithFunction.dll
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\bin\Debug\net8.0\Week7CalculatorWithFunction.pdb
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\Week7CalculatorWithFunction.dll
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\refint\Week7CalculatorWithFunction.dll
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\Week7CalculatorWithFunction.pdb
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\Week7CalculatorWithFunction.genruntimeconfig.cache
+C:\Users\raigo\source\repos\Week7CalculatorWithFunction\Week7CalculatorWithFunction\obj\Debug\net8.0\ref\Week7CalculatorWithFunction.dll

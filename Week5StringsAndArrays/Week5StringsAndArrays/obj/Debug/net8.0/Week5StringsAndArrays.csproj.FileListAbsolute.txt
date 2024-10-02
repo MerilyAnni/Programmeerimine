@@ -1,0 +1,4 @@
+C:\Users\raigo\source\repos\Week5StringsAndArrays\Week5StringsAndArrays\obj\Debug\net8.0\Week5StringsAndArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week5StringsAndArrays\Week5StringsAndArrays\obj\Debug\net8.0\Week5StringsAndArrays.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week5StringsAndArrays\Week5StringsAndArrays\obj\Debug\net8.0\Week5StringsAndArrays.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week5StringsAndArrays\Week5StringsAndArrays\obj\Debug\net8.0\Week5StringsAndArrays.csproj.CoreCompileInputs.cache
