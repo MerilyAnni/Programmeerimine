@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\bin\Debug\net8.0\Week3Switch.exe
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\bin\Debug\net8.0\Week3Switch.deps.json
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\bin\Debug\net8.0\Week3Switch.runtimeconfig.json
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\bin\Debug\net8.0\Week3Switch.dll
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\bin\Debug\net8.0\Week3Switch.pdb
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\Week3Switch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\Week3Switch.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\Week3Switch.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\Week3Switch.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\Week3Switch.dll
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\refint\Week3Switch.dll
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\Week3Switch.pdb
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\Week3Switch.genruntimeconfig.cache
+C:\Users\raigo\source\repos\Week3Switch\Week3Switch\obj\Debug\net8.0\ref\Week3Switch.dll

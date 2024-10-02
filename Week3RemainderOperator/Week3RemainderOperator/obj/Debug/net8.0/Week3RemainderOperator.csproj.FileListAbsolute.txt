@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\bin\Debug\net8.0\Week3RemainderOperator.exe
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\bin\Debug\net8.0\Week3RemainderOperator.deps.json
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\bin\Debug\net8.0\Week3RemainderOperator.runtimeconfig.json
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\bin\Debug\net8.0\Week3RemainderOperator.dll
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\bin\Debug\net8.0\Week3RemainderOperator.pdb
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\Week3RemainderOperator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\Week3RemainderOperator.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\Week3RemainderOperator.AssemblyInfo.cs
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\Week3RemainderOperator.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\Week3RemainderOperator.dll
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\refint\Week3RemainderOperator.dll
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\Week3RemainderOperator.pdb
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\Week3RemainderOperator.genruntimeconfig.cache
+C:\Users\raigo\source\repos\Week3RemainderOperator\Week3RemainderOperator\obj\Debug\net8.0\ref\Week3RemainderOperator.dll

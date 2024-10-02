@@ -1,0 +1,14 @@
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\bin\Debug\net8.0\week2ifStatements.exe
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\bin\Debug\net8.0\week2ifStatements.deps.json
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\bin\Debug\net8.0\week2ifStatements.runtimeconfig.json
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\bin\Debug\net8.0\week2ifStatements.dll
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\bin\Debug\net8.0\week2ifStatements.pdb
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\week2ifStatements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\week2ifStatements.AssemblyInfoInputs.cache
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\week2ifStatements.AssemblyInfo.cs
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\week2ifStatements.csproj.CoreCompileInputs.cache
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\week2ifStatements.dll
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\refint\week2ifStatements.dll
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\week2ifStatements.pdb
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\week2ifStatements.genruntimeconfig.cache
+C:\Users\raigo\source\repos\week2ifStatements\week2ifStatements\obj\Debug\net8.0\ref\week2ifStatements.dll
