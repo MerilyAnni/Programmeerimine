@@ -1,25 +1,1140 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35303.130
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week13ReadingFromDB", "Week13ReadingFromDB\Week13ReadingFromDB.csproj", "{41B499EA-DD14-4776-823A-23F6C4B716D5}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{41B499EA-DD14-4776-823A-23F6C4B716D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41B499EA-DD14-4776-823A-23F6C4B716D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41B499EA-DD14-4776-823A-23F6C4B716D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41B499EA-DD14-4776-823A-23F6C4B716D5}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D619471C-0FE0-49EE-B7B1-C5A0FE247871}
-	EndGlobalSection
-EndGlobal
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect | Hire & Find Jobs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --employer: #8b5cf6;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gray: #64748b;
+            --light-gray: #e2e8f0;
+            --success: #059669;
+        }
+        
+        body {
+            background-color: #f1f5f9;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo i {
+            font-size: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary);
+        }
+        
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .user-type-toggle {
+            display: flex;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 5px;
+            margin: 0 20px;
+        }
+        
+        .user-type-btn {
+            padding: 8px 20px;
+            border-radius: 6px;
+            border: none;
+            background: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .user-type-btn.active {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .btn-employer {
+            background-color: var(--employer);
+            color: white;
+        }
+        
+        .btn-employer:hover {
+            background-color: #7c3aed;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+        
+        /* Dashboard Tabs */
+        .dashboard-tabs {
+            display: flex;
+            background-color: white;
+            border-bottom: 1px solid var(--light-gray);
+            overflow-x: auto;
+        }
+        
+        .dashboard-tab {
+            padding: 15px 25px;
+            font-weight: 500;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+        }
+        
+        .dashboard-tab.active {
+            border-bottom-color: var(--primary);
+            color: var(--primary);
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+        
+        /* Employer Dashboard */
+        .dashboard-section {
+            display: none;
+            padding: 30px 0;
+        }
+        
+        .dashboard-section.active {
+            display: block;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .section-header h2 {
+            font-size: 1.8rem;
+        }
+        
+        .stats-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .stat-card.employer i {
+            color: var(--employer);
+        }
+        
+        .stat-card h3 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        
+        .stat-card p {
+            color: var(--gray);
+        }
+        
+        /* Job Posting Form */
+        .post-job-form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group.required label::after {
+            content: ' *';
+            color: #ef4444;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--light-gray);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Job Listings Table */
+        .job-listings-table {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            background-color: var(--light);
+        }
+        
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--dark);
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .status-active {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        
+        .status-pending {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        
+        .status-closed {
+            background-color: #e5e7eb;
+            color: #374151;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .action-btn {
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .edit-btn {
+            background-color: #dbeafe;
+            color: var(--primary);
+        }
+        
+        .delete-btn {
+            background-color: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .view-btn {
+            background-color: #f0f9ff;
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+        
+        .search-box {
+            display: flex;
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 18px 20px;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .search-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        /* Main Content - Job Seeker View */
+        .main-content {
+            display: flex;
+            gap: 30px;
+            padding: 40px 0;
+        }
+        
+        .sidebar {
+            flex: 0 0 300px;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            height: fit-content;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .job-listings {
+            flex: 1;
+        }
+        
+        /* Job Cards */
+        .job-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .job-title {
+            font-size: 1.4rem;
+            color: var(--dark);
+        }
+        
+        .job-company {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .job-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: var(--gray);
+        }
+        
+        .job-meta i {
+            margin-right: 5px;
+        }
+        
+        .job-tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .tag {
+            background-color: var(--light-gray);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+        
+        .tag.full-time {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        
+        .tag.remote {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        
+        /* Applicants Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal {
+            background-color: white;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--gray);
+        }
+        
+        .applicant-card {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .applicant-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .applicant-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .applicant-date {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .applicant-skills {
+            display: flex;
+            gap: 8px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                flex: 1;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .nav-container {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .user-type-toggle {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                overflow-x: auto;
+                padding-bottom: 10px;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .search-input, .search-btn {
+                width: 100%;
+                padding: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-briefcase"></i>
+                <span>CareerConnect</span>
+            </a>
+            
+            <div class="user-type-toggle">
+                <button class="user-type-btn active" id="jobSeekerBtn">Job Seeker</button>
+                <button class="user-type-btn" id="employerBtn">Employer</button>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#" class="active" data-section="home">Home</a>
+                <a href="#" data-section="jobs">Jobs</a>
+                <a href="#" data-section="companies">Companies</a>
+                <a href="#" data-section="dashboard" class="employer-only">Dashboard</a>
+                <a href="#" data-section="postJob" class="employer-only">Post a Job</a>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button class="btn btn-outline" id="loginBtn">Sign In</button>
+                <button class="btn btn-primary" id="registerBtn">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Job Seeker View -->
+    <div id="jobSeekerView">
+        <!-- Hero Section -->
+        <section class="hero" id="homeSection">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Find Your Dream Job</h1>
+                    <p>Discover thousands of job opportunities with all the information you need. It's your future. Come find it.</p>
+                    
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Job title, keywords, or company">
+                        <input type="text" class="search-input" placeholder="City, state, or remote">
+                        <button class="search-btn">Search Jobs</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="container main-content" id="jobsSection" style="display: none;">
+            <!-- Sidebar Filters -->
+            <aside class="sidebar">
+                <h3>Filter Jobs</h3>
+                
+                <div class="filter-group">
+                    <h4>Job Type</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" checked> Full-time
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> Part-time
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> Contract
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> Internship
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" checked> Remote
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Experience Level</h4>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" checked> Entry Level
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> Mid Level
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> Senior Level
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox"> Executive
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" style="width: 100%;">Apply Filters</button>
+            </aside>
+
+            <!-- Job Listings -->
+            <main class="job-listings">
+                <div class="section-header">
+                    <h2>Recommended Jobs</h2>
+                    <span class="job-count">Showing 6 of 124 jobs</span>
+                </div>
+                
+                <!-- Job Cards -->
+                <div class="job-card" data-job-id="1">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Frontend Developer</h3>
+                            <p class="job-company">TechVision Inc.</p>
+                        </div>
+                        <div>
+                            <span class="tag full-time">Full-time</span>
+                            <span class="tag remote">Remote</span>
+                        </div>
+                    </div>
+                    
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+                        <span><i class="fas fa-dollar-sign"></i> $90,000 - $120,000</span>
+                        <span><i class="fas fa-clock"></i> 2 days ago</span>
+                    </div>
+                    
+                    <div class="job-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    
+                    <p class="job-description">We're looking for a skilled Frontend Developer to join our team. You'll be responsible for building responsive web applications using React, TypeScript, and modern CSS frameworks.</p>
+                    
+                    <div class="job-footer">
+                        <button class="btn btn-primary apply-btn" data-job="Frontend Developer">Apply Now</button>
+                    </div>
+                </div>
+                
+                <div class="job-card" data-job-id="2">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Data Analyst</h3>
+                            <p class="job-company">DataCorp Solutions</p>
+                        </div>
+                        <div>
+                            <span class="tag full-time">Full-time</span>
+                        </div>
+                    </div>
+                    
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                        <span><i class="fas fa-dollar-sign"></i> $75,000 - $95,000</span>
+                        <span><i class="fas fa-clock"></i> 5 days ago</span>
+                    </div>
+                    
+                    <div class="job-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Tableau</span>
+                    </div>
+                    
+                    <p class="job-description">Seeking a Data Analyst to interpret data and turn it into information which can offer ways to improve our business. You will use data analysis tools and techniques.</p>
+                    
+                    <div class="job-footer">
+                        <button class="btn btn-primary apply-btn" data-job="Data Analyst">Apply Now</button>
+                    </div>
+                </div>
+                
+                <!-- More job cards would be here -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Employer View -->
+    <div id="employerView" style="display: none;">
+        <!-- Dashboard Tabs -->
+        <div class="dashboard-tabs">
+            <div class="container" style="display: flex;">
+                <div class="dashboard-tab active" data-tab="overview">Overview</div>
+                <div class="dashboard-tab" data-tab="myJobs">My Job Posts</div>
+                <div class="dashboard-tab" data-tab="applicants">Applicants</div>
+                <div class="dashboard-tab" data-tab="postJob">Post New Job</div>
+                <div class="dashboard-tab" data-tab="company">Company Profile</div>
+            </div>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div class="container">
+            <!-- Overview Section -->
+            <div class="dashboard-section active" id="overviewSection">
+                <div class="section-header">
+                    <h2>Employer Dashboard</h2>
+                    <p>Welcome back, <strong>TechVision Inc.</strong></p>
+                </div>
+                
+                <div class="stats-cards">
+                    <div class="stat-card employer">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>8</h3>
+                        <p>Active Job Posts</p>
+                    </div>
+                    
+                    <div class="stat-card employer">
+                        <i class="fas fa-users"></i>
+                        <h3>142</h3>
+                        <p>Total Applicants</p>
+                    </div>
+                    
+                    <div class="stat-card employer">
+                        <i class="fas fa-eye"></i>
+                        <h3>2,548</h3>
+                        <p>Profile Views</p>
+                    </div>
+                    
+                    <div class="stat-card employer">
+                        <i class="fas fa-star"></i>
+                        <h3>4.7</h3>
+                        <p>Company Rating</p>
+                    </div>
+                </div>
+                
+                <div class="section-header">
+                    <h3>Recent Applicants</h3>
+                    <button class="btn btn-employer" id="viewAllApplicants">View All</button>
+                </div>
+                
+                <div class="job-listings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Applicant Name</th>
+                                <th>Position</th>
+                                <th>Applied Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alex Johnson</td>
+                                <td>Frontend Developer</td>
+                                <td>Oct 12, 2023</td>
+                                <td><span class="status-badge status-active">New</span></td>
+                                <td><button class="action-btn view-btn view-applicant">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>Maria Garcia</td>
+                                <td>UX Designer</td>
+                                <td>Oct 10, 2023</td>
+                                <td><span class="status-badge status-active">Reviewed</span></td>
+                                <td><button class="action-btn view-btn view-applicant">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>David Chen</td>
+                                <td>Data Analyst</td>
+                                <td>Oct 8, 2023</td>
+                                <td><span class="status-badge status-closed">Rejected</span></td>
+                                <td><button class="action-btn view-btn view-applicant">View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- My Jobs Section -->
+            <div class="dashboard-section" id="myJobsSection">
+                <div class="section-header">
+                    <h2>My Job Posts</h2>
+                    <button class="btn btn-employer" id="createNewJob">+ Create New Job Post</button>
+                </div>
+                
+                <div class="job-listings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Job Title</th>
+                                <th>Applicants</th>
+                                <th>Posted Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Frontend Developer</td>
+                                <td>24</td>
+                                <td>Oct 5, 2023</td>
+                                <td><span class="status-badge status-active">Active</span></td>
+                                <td class="action-buttons">
+                                    <button class="action-btn view-btn view-applicants" data-job="Frontend Developer">View Applicants</button>
+                                    <button class="action-btn edit-btn">Edit</button>
+                                    <button class="action-btn delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Senior UX Designer</td>
+                                <td>18</td>
+                                <td>Sep 28, 2023</td>
+                                <td><span class="status-badge status-active">Active</span></td>
+                                <td class="action-buttons">
+                                    <button class="action-btn view-btn view-applicants" data-job="Senior UX Designer">View Applicants</button>
+                                    <button class="action-btn edit-btn">Edit</button>
+                                    <button class="action-btn delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Data Analyst</td>
+                                <td>42</td>
+                                <td>Sep 15, 2023</td>
+                                <td><span class="status-badge status-closed">Closed</span></td>
+                                <td class="action-buttons">
+                                    <button class="action-btn view-btn view-applicants" data-job="Data Analyst">View Applicants</button>
+                                    <button class="action-btn edit-btn">Edit</button>
+                                    <button class="action-btn delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Marketing Manager</td>
+                                <td>12</td>
+                                <td>Sep 10, 2023</td>
+                                <td><span class="status-badge status-pending">Pending</span></td>
+                                <td class="action-buttons">
+                                    <button class="action-btn view-btn view-applicants" data-job="Marketing Manager">View Applicants</button>
+                                    <button class="action-btn edit-btn">Edit</button>
+                                    <button class="action-btn delete-btn">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Post Job Section -->
+            <div class="dashboard-section" id="postJobSection">
+                <div class="section-header">
+                    <h2>Post a New Job</h2>
+                    <p>Fill out the form below to create a new job listing</p>
+                </div>
+                
+                <form id="postJobForm" class="post-job-form">
+                    <div class="form-row">
+                        <div class="form-group required">
+                            <label for="jobTitle">Job Title</label>
+                            <input type="text" id="jobTitle" class="form-control" placeholder="e.g. Senior Frontend Developer" required>
+                        </div>
+                        
+                        <div class="form-group required">
+                            <label for="jobType">Job Type</label>
+                            <select id="jobType" class="form-control" required>
+                                <option value="">Select Job Type</option>
+                                <option value="full-time">Full-time</option>
+                                <option value="part-time">Part-time</option>
+                                <option value="contract">Contract</option>
+                                <option value="internship">Internship</option>
+                                <option value="remote">Remote</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group required">
+                            <label for="jobLocation">Location</label>
+                            <input type="text" id="jobLocation" class="form-control" placeholder="e.g. San Francisco, CA or Remote" required>
+                        </div>
+                        
+                        <div class="form-group required">
+                            <label for="jobSalary">Salary Range</label>
+                            <input type="text" id="jobSalary" class="form-control" placeholder="e.g. $80,000 - $120,000" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group required">
+                        <label for="jobDescription">Job Description</label>
+                        <textarea id="jobDescription" class="form-control" placeholder="Describe the role, responsibilities, and requirements..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Required Skills</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="skillJs" value="JavaScript">
+                                <label for="skillJs">JavaScript</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="skillReact" value="React">
+                                <label for="skillReact">React</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="skillNode" value="Node.js">
+                                <label for="skillNode">Node.js</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="skillPython" value="Python">
+                                <label for="skillPython">Python</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="skillSQL" value="SQL">
+                                <label for="skillSQL">SQL</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="experienceLevel">Experience Level</label>
+                            <select id="experienceLevel" class="form-control">
+                                <option value="">Select Level</option>
+                                <option value="entry">Entry Level</option>
+                                <option value="mid">Mid Level</option>
+                                <option value="senior">Senior Level</option>
+                                <option value="executive">Executive</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicationDeadline">Application Deadline</label>
+                            <input type="date" id="applicationDeadline" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 15px; margin-top: 30px;">
+                        <button type="submit" class="btn btn-employer" style="flex: 1;">Post Job</button>
+                        <button type="reset" class="btn btn-outline" style="flex: 1;">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Applicants Modal -->
+            <div class="modal-overlay" id="applicantsModal">
+                <div class="modal">
+                    <button class="close-modal">&times;</button>
+                    <h2>Applicants for <span id="modalJobTitle">Frontend Developer</span></h2>
+                    <p>Total Applicants: <strong id="applicantCount">24</strong></p>
+                    
+                    <div id="applicantsList">
+                        <!-- Applicants will be loaded here -->
+                        <div class="applicant-card">
+                            <div class="applicant-header">
+                                <div class="applicant-name">Alex Johnson</div>
+                                <div class="applicant-date">Applied: Oct 12, 2023</div>
+                            </div>
+                            <div class="applicant-meta">
+                                <div><i class="fas fa-envelope"></i> alex.johnson@email.com</div>
+                                <div><i class="fas fa-phone"></i> (555) 123-4567</div>
+                            </div>
+                            <div class="applicant-skills">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <p class="
